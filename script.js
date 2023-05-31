@@ -5,6 +5,9 @@ function getDepartures() {
         url: url,
         method: "GET",
         dataType: "json",
+        headers: {
+            "Authorization": "Bearer " + apiKey
+        },
         success: function(data) {
             var departures = data.Siri.ServiceDelivery.StopMonitoringDelivery.MonitoredStopVisit;
 
