@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Départs de train</title>
+</head>
+<body>
+    <h1>Départs de train</h1>
+    <ul>
+        {% for departure in departures %}
+            <li>{{ departure['name'] }} - {{ departure['time'] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
