@@ -1,0 +1,2391 @@
+{
+    "Siri": {
+        "ServiceDelivery": {
+            "ResponseTimestamp": "2023-05-31T20:54:38.170Z",
+            "ProducerRef": "IVTR_HET",
+            "ResponseMessageIdentifier": "IVTR_HET:ResponseMessage:8fd8c7b2-dae5-42b1-8c36-73cb0dea5d05:LOC:",
+            "StopMonitoringDelivery": [
+                {
+                    "ResponseTimestamp": "2023-05-31T20:54:38.233Z",
+                    "Version": "2.0",
+                    "Status": "true",
+                    "MonitoredStopVisit": [
+                        {
+                            "RecordedAtTime": "2023-05-31T17:49:39.778Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_148447:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01727:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::fbf28b6e-458a-4bc0-aa37-077ce14afc7e:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41251:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Saint-Quentin en Yvelines"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "SARA"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T18:26:20.000Z",
+                                    "DepartureStatus": "",
+                                    "Order": 37,
+                                    "AimedArrivalTime": "2023-05-31T16:21:20.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "148447"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T18:28:17.222Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165374:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01741:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::9b766945-3dce-42d5-a6c4-02433ab8f921:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:40951:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "La D\u00e9fense (Grande Arche)"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "DEFI"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": true,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "La D\u00e9fense (Grande Arche)"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T18:28:34.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T18:29:40.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 3,
+                                    "AimedArrivalTime": "2023-05-31T18:28:40.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "2B"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T18:29:40.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165374"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T18:29:53.355Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_862443:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01744:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::1745082d-5f10-4fb4-bcaf-d0d48fbbde09:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:411506:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Chartres"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": true,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Chartres"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T18:30:08.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T18:30:08.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 11,
+                                    "AimedArrivalTime": "2023-05-31T18:30:30.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "1"
+                                    },
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "862443"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T18:32:59.310Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_862588:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01744:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::7247cf8b-6ba0-4847-843c-9081438d829e:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41203:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare Montparnasse"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare Montparnasse"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T18:33:01.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T18:33:01.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 22,
+                                    "AimedArrivalTime": "2023-05-31T18:33:30.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "2"
+                                    },
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "862588"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T02:39:14.564Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_147474:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01727:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::e7cb7bf1-b0e1-473c-9a51-40770c4ba5ac:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41316:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Saint-Martin d'Etampes"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "ELBA"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Saint-Martin d'Etampes"
+                                        }
+                                    ],
+                                    "ExpectedDepartureTime": "2023-05-31T18:40:00.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 1,
+                                    "AimedDepartureTime": "2023-05-31T18:40:00.000Z",
+                                    "ArrivalStatus": ""
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "147475"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T18:41:18.217Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165465:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::eee91fb5-9e49-47b3-a57d-d349837bec93:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41228:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Rambouillet"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "ROPO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Rambouillet"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T18:41:23.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T18:42:50.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 11,
+                                    "AimedArrivalTime": "2023-05-31T18:41:50.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "1"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T18:42:50.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165465"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T18:46:03.756Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165365:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01741:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::84d8c91d-0c22-49f4-a9c3-17ad625360a6:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41223:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de la Verri\u00e8re"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "VERI"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de la Verri\u00e8re"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T18:46:10.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T18:47:40.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 10,
+                                    "AimedArrivalTime": "2023-05-31T18:46:40.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "1"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T18:47:40.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165365"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-30T20:11:26.203Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165476:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::da03a7d8-83a1-4ac3-a045-50be3b4b7510:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41203:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare Montparnasse"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "PORO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare Montparnasse"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T18:48:40.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T18:49:40.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 7,
+                                    "AimedArrivalTime": "2023-05-31T18:48:40.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "2"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T18:49:40.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165476"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T18:49:37.039Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165476:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::da03a7d8-83a1-4ac3-a045-50be3b4b7510:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41203:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare Montparnasse"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "PORO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": true,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare Montparnasse"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T18:49:35.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T18:50:35.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 7,
+                                    "AimedArrivalTime": "2023-05-31T18:48:40.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "2"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T18:49:40.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165476"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T18:49:00.925Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_148467:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01727:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::7508c10d-4597-4b4f-a0fa-eedeca5cdc4a:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41251:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Saint-Quentin en Yvelines"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "SARA"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T18:51:06.000Z",
+                                    "DepartureStatus": "",
+                                    "Order": 37,
+                                    "AimedArrivalTime": "2023-05-31T18:51:20.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "148467"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-30T19:30:30.534Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_148467:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01727:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::7508c10d-4597-4b4f-a0fa-eedeca5cdc4a:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41251:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Saint-Quentin en Yvelines"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "SARA"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T18:51:20.000Z",
+                                    "DepartureStatus": "",
+                                    "Order": 37,
+                                    "AimedArrivalTime": "2023-05-31T18:51:20.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "148467"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T18:54:11.728Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165469:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::7af7d621-516e-4e06-9d67-5bd00712c1cf:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41228:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Rambouillet"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "ROPO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Rambouillet"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T19:11:50.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T19:12:50.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 11,
+                                    "AimedArrivalTime": "2023-05-31T19:11:50.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "1"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T19:12:50.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165469"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-30T19:45:33.626Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165469:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::7af7d621-516e-4e06-9d67-5bd00712c1cf:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41228:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Rambouillet"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "ROPO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Rambouillet"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T19:11:50.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T19:12:50.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 11,
+                                    "AimedArrivalTime": "2023-05-31T19:11:50.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "1"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T19:12:50.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165469"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T18:54:26.993Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165371:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01741:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::9a287fec-86af-466f-b776-b3037ca14f06:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41223:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de la Verri\u00e8re"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "VERI"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de la Verri\u00e8re"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T19:17:48.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T19:18:48.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 10,
+                                    "AimedArrivalTime": "2023-05-31T19:16:40.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "1"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T19:17:50.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165371"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-30T20:07:31.839Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165480:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::e5542ec8-0551-469b-8bf4-34b57e580e4b:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41203:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare Montparnasse"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "PORO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare Montparnasse"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T19:18:40.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T19:19:40.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 7,
+                                    "AimedArrivalTime": "2023-05-31T19:18:40.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "2"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T19:19:40.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165480"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T18:54:18.352Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165480:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::e5542ec8-0551-469b-8bf4-34b57e580e4b:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41203:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare Montparnasse"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "PORO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare Montparnasse"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T19:18:58.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T19:19:58.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 7,
+                                    "AimedArrivalTime": "2023-05-31T19:18:40.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "2"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T19:19:40.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165480"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T01:08:41.172Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165382:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01741:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::d360b40f-4bfd-466b-b80a-da1e9eb8043d:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:40951:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "La D\u00e9fense (Grande Arche)"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "DEFI"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "La D\u00e9fense (Grande Arche)"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T19:28:40.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T19:29:40.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 3,
+                                    "AimedArrivalTime": "2023-05-31T19:28:40.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "2B"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T19:29:40.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165382"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T18:53:00.038Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_16782:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01744:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::286a206e-6765-40aa-bcfc-7d1cad440340:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41203:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare Montparnasse"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare Montparnasse"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T19:33:30.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T19:33:30.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 30,
+                                    "AimedArrivalTime": "2023-05-31T19:33:30.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "2"
+                                    },
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "16782"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T15:01:20.749Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_147482:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01727:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::d3b61a69-995e-4d9e-99b5-94b643d8305b:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41333:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare d'Austerlitz"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "ZEBA"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare d'Austerlitz"
+                                        }
+                                    ],
+                                    "ExpectedDepartureTime": "2023-05-31T19:40:00.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 1,
+                                    "AimedDepartureTime": "2023-05-31T19:40:00.000Z",
+                                    "ArrivalStatus": ""
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "147483"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T18:53:46.138Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_148471:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01727:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::f8993b79-354d-4590-871b-d9b8e993e01b:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41251:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Saint-Quentin en Yvelines"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "SARA"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T19:40:08.000Z",
+                                    "DepartureStatus": "",
+                                    "Order": 37,
+                                    "AimedArrivalTime": "2023-05-31T19:36:20.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "148470"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T14:27:37.091Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165473:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::ae30fb6a-7dd2-45ce-9722-1c0da9870dd6:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41228:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Rambouillet"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "ROPO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Rambouillet"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T19:41:50.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T19:42:50.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 11,
+                                    "AimedArrivalTime": "2023-05-31T19:41:50.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "1"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T19:42:50.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165473"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-30T19:42:27.906Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165473:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::ae30fb6a-7dd2-45ce-9722-1c0da9870dd6:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41228:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Rambouillet"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "ROPO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Rambouillet"
+                                        }
+                                    ],
+                                    "DepartureStatus": "onTime",
+                                    "Order": 11,
+                                    "AimedArrivalTime": "2023-05-31T19:41:50.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "1"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T19:42:50.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165473"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T01:22:06.105Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165375:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01741:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::9129ab1f-eb4f-4ad8-bd2d-15a8544904ea:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41223:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de la Verri\u00e8re"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "VERI"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de la Verri\u00e8re"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T19:46:40.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T19:47:50.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 10,
+                                    "AimedArrivalTime": "2023-05-31T19:46:40.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "1"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T19:47:50.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165375"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T14:28:19.973Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165484:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::da72767a-cdec-4f24-a7e5-99fd83a77185:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41203:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare Montparnasse"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "PORO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare Montparnasse"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T19:48:40.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T19:49:40.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 7,
+                                    "AimedArrivalTime": "2023-05-31T19:48:40.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "2"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T19:49:40.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165484"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-30T20:10:53.516Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165484:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::da72767a-cdec-4f24-a7e5-99fd83a77185:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41203:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare Montparnasse"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "PORO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare Montparnasse"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T19:48:40.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T19:49:40.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 7,
+                                    "AimedArrivalTime": "2023-05-31T19:48:40.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "2"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T19:49:40.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165484"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T11:01:45.990Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165477:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::97b685d6-2379-4af0-a382-592594a5f57c:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41228:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Rambouillet"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "ROPO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Rambouillet"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T20:11:50.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T20:12:50.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 11,
+                                    "AimedArrivalTime": "2023-05-31T20:11:50.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "1"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T20:12:50.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165477"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-30T19:50:41.230Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165477:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::97b685d6-2379-4af0-a382-592594a5f57c:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41228:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Rambouillet"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "ROPO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Rambouillet"
+                                        }
+                                    ],
+                                    "DepartureStatus": "onTime",
+                                    "Order": 11,
+                                    "AimedArrivalTime": "2023-05-31T20:11:50.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "1"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T20:12:50.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165477"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T14:29:37.123Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165488:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::4e3066e5-79aa-4a5f-8701-cef2727c1b24:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41203:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare Montparnasse"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "PORO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare Montparnasse"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T20:18:40.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T20:19:40.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 7,
+                                    "AimedArrivalTime": "2023-05-31T20:18:40.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "2B"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T20:19:40.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165488"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-30T20:11:02.751Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165488:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::4e3066e5-79aa-4a5f-8701-cef2727c1b24:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41203:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare Montparnasse"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "PORO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare Montparnasse"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T20:18:40.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T20:19:40.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 7,
+                                    "AimedArrivalTime": "2023-05-31T20:18:40.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "2B"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T20:19:40.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165488"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-30T20:04:19.113Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_148479:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01727:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::50dff324-779e-473f-a767-28e0fc0f957d:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41251:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Saint-Quentin en Yvelines"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "SARA"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T20:36:20.000Z",
+                                    "DepartureStatus": "",
+                                    "Order": 37,
+                                    "AimedArrivalTime": "2023-05-31T20:36:20.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "148478"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T01:08:45.682Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_147490:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01727:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::0d4c0d17-81e9-4ae5-b13f-2c7c844965d4:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41333:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare d'Austerlitz"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "ZEBA"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare d'Austerlitz"
+                                        }
+                                    ],
+                                    "ExpectedDepartureTime": "2023-05-31T20:40:00.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 1,
+                                    "AimedDepartureTime": "2023-05-31T20:40:00.000Z",
+                                    "ArrivalStatus": ""
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "147491"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T13:08:21.176Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165481:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::57b041d1-d65b-45b8-80eb-9c9ccf84a166:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41228:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Rambouillet"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "ROPO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Rambouillet"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T20:41:50.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T20:42:50.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 11,
+                                    "AimedArrivalTime": "2023-05-31T20:41:50.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "1"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T20:42:50.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165481"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T18:54:07.568Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_148479:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01727:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::50dff324-779e-473f-a767-28e0fc0f957d:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41251:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Saint-Quentin en Yvelines"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "SARA"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T20:43:10.000Z",
+                                    "DepartureStatus": "",
+                                    "Order": 37,
+                                    "AimedArrivalTime": "2023-05-31T20:36:20.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "148478"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T01:08:39.020Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165383:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01741:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::efe54414-4b49-4a15-8aa5-4385e75a4afe:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41223:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de la Verri\u00e8re"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "VERI"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de la Verri\u00e8re"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T20:46:40.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T20:47:50.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 10,
+                                    "AimedArrivalTime": "2023-05-31T20:46:40.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "1B"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T20:47:50.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165383"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T14:27:37.748Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165492:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::de2c412e-aa28-407d-847e-b62e266d3369:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41203:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare Montparnasse"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "PORO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare Montparnasse"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T20:48:40.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T20:49:40.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 7,
+                                    "AimedArrivalTime": "2023-05-31T20:48:40.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "2"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T20:49:40.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165492"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T10:53:27.957Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165485:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::fcae6bea-551e-474f-abbe-73c9ee76b7cc:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41228:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Rambouillet"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "ROPO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Rambouillet"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T21:11:50.000Z",
+                                    "ExpectedDepartureTime": "2023-05-31T21:12:50.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 11,
+                                    "AimedArrivalTime": "2023-05-31T21:11:50.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "1B"
+                                    },
+                                    "AimedDepartureTime": "2023-05-31T21:12:50.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165485"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-05-31T15:01:21.170Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_148489:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41251:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01727:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::36fae0f8-85ce-44e3-a57a-ddd48ee13a0b:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41251:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Saint-Quentin en Yvelines"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "SARA"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-05-31T21:36:20.000Z",
+                                    "DepartureStatus": "",
+                                    "Order": 16,
+                                    "AimedArrivalTime": "2023-05-31T21:36:20.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "148488"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

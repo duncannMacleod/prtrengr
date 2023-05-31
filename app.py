@@ -7,7 +7,7 @@ app = Flask(__name__)
 def get_departures():
     url = "https://prim.iledefrance-mobilites.fr/marketplace/stop-monitoring?MonitoringRef=STIF:StopPoint:Q:463158:"
     headers = {
-        'Authorization': 'Bearer VOTRE_CLÉ_API',
+        'Authorization': 'Bearer vD5EOap2m5uSuMZmcYgh3pRbmsDlfQ3s',
         'Accept': 'application/json'
     }
 
