@@ -5,12 +5,16 @@ import pytz
 
 
 def compare_times(time_str1):
-    time_str1=convert_time(time_str1)
-    time_str2=datetime.datetime.now().strftime("%H:%M")
-    time_obj1 = datetime.datetime.strptime(time_str1, "%H:%M")
-    time_obj2 = datetime.datetime.strptime(time_str2, "%H:%M")
+    time_str1 = convert_time(time_str1)
     
-    return time_obj1 > time_obj2
+    if time_str1 != "Unknown":
+        time_str2 = datetime.datetime.now().strftime("%H:%M")
+        time_obj1 = datetime.datetime.strptime(time_str1, "%H:%M")
+        time_obj2 = datetime.datetime.strptime(time_str2, "%H:%M")
+        
+        return time_obj1 > time_obj2
+    else:
+        return False
 
 
 def get_current_time():
@@ -20,8 +24,12 @@ def get_current_time():
 
 
 def convert_time(time_str):
-    time_obj = datetime.datetime.strptime(time_str, "%Y-%m-%dT%H:%M:%S.%fZ")
-    return time_obj.strftime("%H:%M")
+    if time_str != "Unknown":
+        time_obj = datetime.datetime.strptime(time_str, "%Y-%m-%dT%H:%M:%S.%fZ")
+        time_obj = time_obj + datetime.timedelta(hours=2)  # Ajouter 2 heures
+        return time_obj.strftime("%H:%M")
+    else:
+        return "Unknown"
 
 def adjust_departure_time(time_str):
     time_obj = datetime.datetime.strptime(time_str, "%H:%M")
@@ -59,10 +67,10 @@ def process_departures(data, limit):
             destination_name = monitored_vehicle_journey['DestinationName'][0]['value']
             if 'MonitoredCall' in monitored_vehicle_journey:
                 monitored_call = monitored_vehicle_journey['MonitoredCall']
-                expected_departure_time = monitored_call.get('ExpectedDepartureTime', 'Unknown')
+                expected_departure_time = monitored_call.get('AimedDepartureTime', 'Unknown')
                 vehicle_at_stop = monitored_call.get('VehicleAtStop', False)
             else:
-                expected_departure_time = "2023-06-02T00:00:00.000Z"
+                expected_departure_time = "2023-01-01T00:00:00.000Z"
                 vehicle_at_stop = False
 
             if compare_times(expected_departure_time):
@@ -82,12 +90,13 @@ def process_departures(data, limit):
         line_ref = departure['line_ref']
         expected_departure_time = departure['expected_departure_time']
         destination_name = departure['destination_name']
+        convert_time_expected=convert_time(expected_departure_time)
         if line_ref == "STIF:Line::C01741:":
-            print(f"Ligne U, Destination: {destination_name}, Expected Departure: {expected_departure_time}")
+            print(f"Ligne U, Destination: {destination_name}, Départ prévu à: {convert_time_expected}")
         if line_ref == "STIF:Line::C01736:":
-            print(f"Ligne N, Destination: {destination_name}, Expected Departure: {expected_departure_time}")
+            print(f"Ligne N, Destination: {destination_name}, Départ prévu à: {convert_time_expected}")
         if line_ref == "STIF:Line::C01727:":
-            print(f"Ligne C, Destination: {destination_name}, Expected Departure: {expected_departure_time}")
+            print(f"Ligne C, Destination: {destination_name}, Départ prévu à: {convert_time_expected}")
         print()
         count += 1  # Increment the count variable
 
