@@ -60,16 +60,20 @@ def process_departures(data, limit):
             recorded_at_time = visit['RecordedAtTime']
             monitored_vehicle_journey = visit['MonitoredVehicleJourney']
             line_ref = monitored_vehicle_journey['LineRef']['value']
+            
             if 'DirectionName' in monitored_vehicle_journey and monitored_vehicle_journey['DirectionName']:
                 direction_name = monitored_vehicle_journey['DirectionName'][0]['value']
             else:
                 direction_name = "Unknown"
             destination_ref = monitored_vehicle_journey['DestinationRef']['value']
             destination_name = monitored_vehicle_journey['DestinationName'][0]['value']
+            
+
             if 'MonitoredCall' in monitored_vehicle_journey:
                 monitored_call = monitored_vehicle_journey['MonitoredCall']
                 expected_departure_time = monitored_call.get('AimedDepartureTime', 'Unknown')
                 vehicle_at_stop = monitored_call.get('VehicleAtStop', False)
+                platform_name = monitored_call.get('ArrivalPlatformName', {}).get('value', 'Unknown')
             else:
                 expected_departure_time = "2023-01-01T00:00:00.000Z"
                 vehicle_at_stop = False
@@ -77,7 +81,8 @@ def process_departures(data, limit):
             departure = {
                 'line_ref': line_ref,
                 'expected_departure_time': expected_departure_time,
-                'destination_name': destination_name
+                'destination_name': destination_name,
+                'platform_name': platform_name
             }
 
             if departure not in displayed_departures and compare_times(expected_departure_time):  # Vérifier si le départ est déjà affiché
@@ -96,11 +101,11 @@ def process_departures(data, limit):
         destination_name = departure['destination_name']
         convert_time_expected = convert_time(expected_departure_time)
         if line_ref == "STIF:Line::C01741:":
-            print(f"Ligne U, Destination: {destination_name}, Départ prévu à: {convert_time_expected}")
+            print(f"Ligne U, Destination: {destination_name}, Départ prévu à: {convert_time_expected}, à la voie {platform_name}")
         if line_ref == "STIF:Line::C01736:":
-            print(f"Ligne N, Destination: {destination_name}, Départ prévu à: {convert_time_expected}")
+            print(f"Ligne N, Destination: {destination_name}, Départ prévu à: {convert_time_expected}, à la voie {platform_name}")
         if line_ref == "STIF:Line::C01727:":
-            print(f"Ligne C, Destination: {destination_name}, Départ prévu à: {convert_time_expected}")
+            print(f"Ligne C, Destination: {destination_name}, Départ prévu à: {convert_time_expected}, à la voie {platform_name}")
         print()
         count += 1  # Increment the count variable
 
