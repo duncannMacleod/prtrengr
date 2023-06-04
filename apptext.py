@@ -6,13 +6,6 @@ import os
 import PySimpleGUI as sg
 import time
 
-departures = []
-window = None
-layout=[]
-def main():
-    display_departures(limit=10,stop_point='STIF%3AStopPoint%3AQ%3A41207%3A')
-
-
 
 def compare_times(time_str1):
     time_str1 = convert_time(time_str1)
@@ -56,7 +49,7 @@ def Station_Name(stop_point):
             return station_list[key]
     return None
 
-def get_departures(stop_point):
+def get_departures(departures,stop_point):
     base_url = "https://prim.iledefrance-mobilites.fr/marketplace/stop-monitoring?MonitoringRef={}"
     url= base_url.format(stop_point)
 =======
@@ -70,16 +63,19 @@ def get_departures(departures):
     with open("departures.json", "w") as file:
         json.dump(data, file,indent=4)
 
+<<<<<<< HEAD:apptext.py
 <<<<<<< HEAD:app.py
     process_departures(data)
 =======
     process_departures(data,departures)  # Pass the limit as an argument
 >>>>>>> parent of ae441a9 (.):apptext.py
+=======
+    process_departures(data,departures)
+>>>>>>> parent of de2a88f (.):app.py
 
     return "Data saved to departures.json"
 
-def process_departures(data):
-    global departures
+def process_departures(data,departures):
     stop_monitoring = data['Siri']['ServiceDelivery']['StopMonitoringDelivery']
     
     displayed_departures = []  # Liste pour stocker les départs déjà affichés
@@ -114,6 +110,7 @@ def process_departures(data):
                 'destination_name': destination_name,
                 'platform_name': platform_name
             }
+
             if departure not in displayed_departures and compare_times(expected_departure_time):  # Vérifier si le départ est déjà affiché
                 departures.append(departure)
                 displayed_departures.append(departure)  # Ajouter le départ à la liste des affichés
@@ -121,20 +118,25 @@ def process_departures(data):
     departures = sorted(departures, key=lambda d: d['expected_departure_time'])
     #display_departures(departures, limit)
 
+<<<<<<< HEAD:apptext.py
 <<<<<<< HEAD:app.py
 def refresh_window(window):
         window.refresh()
 def update_departures(stop_point,limit):
     global departures
     
+=======
+
+def display_departures(limit,stop_point):
+>>>>>>> parent of de2a88f (.):app.py
     # Définir la mise en page de la fenêtre
     station_name=Station_Name(stop_point)
-    global layout
-
     layout = [
-        [sg.Text(f"Prochains départs en gare de {station_name}", font=("Helvetica", 16)),sg.Button("Actualiser")],
+        [sg.Text(f"Prochains départs en gare de {station_name}", font=("Helvetica", 16))],
+        [sg.Button("Actualiser")],
     ]
 
+<<<<<<< HEAD:apptext.py
     get_departures(stop_point)
 =======
 
@@ -149,11 +151,17 @@ def display_departures(limit):
 
     get_departures(departures)
 >>>>>>> parent of ae441a9 (.):apptext.py
+=======
+    departures = []
+
+    get_departures(departures,stop_point)
+>>>>>>> parent of de2a88f (.):app.py
 
     # Définition des chemins vers les logos des lignes
     logo_u = 'logo_u.png'
     logo_n = 'logo_n.png'
     logo_c = 'logo_c.png'
+<<<<<<< HEAD:apptext.py
 <<<<<<< HEAD:app.py
     logo_ter = 'logo_ter.png' 
 =======
@@ -164,6 +172,15 @@ def display_departures(limit):
     def refresh_window(window):
         window.refresh()
 >>>>>>> parent of ae441a9 (.):apptext.py
+=======
+    logo_ter = 'logo_ter.png'
+
+    def update_departures(departures):
+        departures = get_departures(departures,stop_point)
+
+    def refresh_window(window):
+        window.refresh()
+>>>>>>> parent of de2a88f (.):app.py
 
     count = 0
     for departure in departures:
@@ -191,26 +208,30 @@ def display_departures(limit):
         layout.append([sg.Image(line_logo, size=(32, 32)), sg.Text(line_text)])
         count += 1
 
-    
-def display_departures(limit,stop_point):
-    
-    global departures
-    global window
-    global layout
-    layout = [[sg.Text("x")]]
-    window= sg.Window('Prochains départs',layout)
+    window = sg.Window('Prochains départs', layout)
+
     # Boucle principale
     while True:
+<<<<<<< HEAD:apptext.py
 <<<<<<< HEAD:app.py
         update_departures(stop_point,limit)
         
         
         event, _ = window.read(timeout=10000)
+=======
+        event, values = window.read()
+>>>>>>> parent of de2a88f (.):app.py
         if event == sg.WINDOW_CLOSED or event == "Quitter":
             break
+        elif event == "Actualiser":
+            update_departures(departures)
+            refresh_window(window)
+
+    # Fermer la fenêtre et terminer le programme
     window.close()
 
 
+<<<<<<< HEAD:apptext.py
 =======
         event, values = window.read(timeout=60000)  # Actualisation toutes les 60 secondes
         if event == sg.WINDOW_CLOSED or event == "Quitter":
@@ -228,5 +249,11 @@ def main():
     display_departures(limit=4)
 
 >>>>>>> parent of ae441a9 (.):apptext.py
+=======
+
+def main():
+    display_departures(limit=10,stop_point='STIF%3AStopPoint%3AQ%3A41207%3A')
+
+>>>>>>> parent of de2a88f (.):app.py
 if __name__ == "__main__":
     main()
