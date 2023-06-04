@@ -39,8 +39,18 @@ def adjust_departure_time(time_str):
     time_obj = time_obj + datetime.timedelta(hours=2)  # Ajouter 2 heures
     return time_obj.strftime("%H:%M")
 
-def get_departures(departures):
-    url = "https://prim.iledefrance-mobilites.fr/marketplace/stop-monitoring?MonitoringRef=STIF%3AStopPoint%3AQ%3A41251%3A"
+def Station_Name(stop_point):
+    with open("stations_names.json",'r') as f:
+        data=json.load(f)
+    station_list=data['Station_Names']
+    for key in station_list:
+        if key==stop_point:
+            return station_list[key]
+    return None
+
+def get_departures(departures,stop_point):
+    base_url = "https://prim.iledefrance-mobilites.fr/marketplace/stop-monitoring?MonitoringRef={}"
+    url= base_url.format(stop_point)
     headers = {'Accept': 'application/json', 'apikey': "vD5EOap2m5uSuMZmcYgh3pRbmsDlfQ3s"}
     response = requests.get(url, headers=headers)
     data = response.json()
@@ -48,7 +58,7 @@ def get_departures(departures):
     with open("departures.json", "w") as file:
         json.dump(data, file,indent=4)
 
-    process_departures(data,departures)  # Pass the limit as an argument
+    process_departures(data,departures)
 
     return "Data saved to departures.json"
 
@@ -59,6 +69,7 @@ def process_departures(data,departures):
 
     for stop in stop_monitoring:
         monitored_visits = stop['MonitoredStopVisit']
+        
         for visit in monitored_visits:
             recorded_at_time = visit['RecordedAtTime']
             monitored_vehicle_journey = visit['MonitoredVehicleJourney']
@@ -93,27 +104,28 @@ def process_departures(data,departures):
                 displayed_departures.append(departure)  # Ajouter le départ à la liste des affichés
 
     departures = sorted(departures, key=lambda d: d['expected_departure_time'])
-    #display_departures(departures, limit)
 
 
-def display_departures(limit):
+def display_departures(limit,stop_point):
     # Définir la mise en page de la fenêtre
+    station_name=Station_Name(stop_point)
     layout = [
-        [sg.Text("Prochains départs", font=("Helvetica", 16))],
+        [sg.Text(f"Prochains départs en gare de {station_name}", font=("Helvetica", 16))],
         [sg.Button("Actualiser")],
     ]
 
     departures = []
 
-    get_departures(departures)
+    get_departures(departures,stop_point)
 
     # Définition des chemins vers les logos des lignes
     logo_u = 'logo_u.png'
     logo_n = 'logo_n.png'
     logo_c = 'logo_c.png'
+    logo_ter = 'logo_ter.png'
 
-    def update_departures(departures,limit):
-        departures = get_departures(limit)
+    def update_departures(departures):
+        departures = get_departures(departures,stop_point)
 
     def refresh_window(window):
         window.refresh()
@@ -137,6 +149,9 @@ def display_departures(limit):
         elif line_ref == "STIF:Line::C01727:":
             line_logo = logo_c
             line_text = f"Destination: {destination_name}, Départ prévu à: {convert_time_expected}"
+        elif line_ref == "STIF:Line::C01744:" or "STIF:Line::C02370:":
+            line_logo = logo_ter
+            line_text = f"Destination: {destination_name}, Départ prévu à: {convert_time_expected}"
         else:
             line_logo = None
             line_text = ""
@@ -148,11 +163,11 @@ def display_departures(limit):
 
     # Boucle principale
     while True:
-        event, values = window.read(timeout=60000)  # Actualisation toutes les 60 secondes
+        event, values = window.read()
         if event == sg.WINDOW_CLOSED or event == "Quitter":
             break
         elif event == "Actualiser":
-            update_departures(departures,limit)
+            update_departures(departures)
             refresh_window(window)
 
     # Fermer la fenêtre et terminer le programme
@@ -161,7 +176,7 @@ def display_departures(limit):
 
 
 def main():
-    display_departures(limit=4)
+    display_departures(limit=10,stop_point='STIF%3AStopPoint%3AQ%3A41207%3A')
 
 if __name__ == "__main__":
     main()
