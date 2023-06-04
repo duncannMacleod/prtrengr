@@ -6,6 +6,13 @@ import os
 import PySimpleGUI as sg
 import time
 
+departures = []
+window = None
+layout=[]
+def main():
+    display_departures(limit=10,stop_point='STIF%3AStopPoint%3AQ%3A41207%3A')
+
+
 
 def compare_times(time_str1):
     time_str1 = convert_time(time_str1)
@@ -48,7 +55,7 @@ def Station_Name(stop_point):
             return station_list[key]
     return None
 
-def get_departures(departures,stop_point):
+def get_departures(stop_point):
     base_url = "https://prim.iledefrance-mobilites.fr/marketplace/stop-monitoring?MonitoringRef={}"
     url= base_url.format(stop_point)
     headers = {'Accept': 'application/json', 'apikey': "vD5EOap2m5uSuMZmcYgh3pRbmsDlfQ3s"}
@@ -58,11 +65,12 @@ def get_departures(departures,stop_point):
     with open("departures.json", "w") as file:
         json.dump(data, file,indent=4)
 
-    process_departures(data,departures)
+    process_departures(data)
 
     return "Data saved to departures.json"
 
-def process_departures(data,departures):
+def process_departures(data):
+    global departures
     stop_monitoring = data['Siri']['ServiceDelivery']['StopMonitoringDelivery']
     
     displayed_departures = []  # Liste pour stocker les départs déjà affichés
@@ -98,37 +106,32 @@ def process_departures(data,departures):
                 'destination_name': destination_name,
                 'platform_name': platform_name
             }
-
             if departure not in displayed_departures and compare_times(expected_departure_time):  # Vérifier si le départ est déjà affiché
                 departures.append(departure)
                 displayed_departures.append(departure)  # Ajouter le départ à la liste des affichés
 
     departures = sorted(departures, key=lambda d: d['expected_departure_time'])
 
-
-def display_departures(limit,stop_point):
+def refresh_window(window):
+        window.refresh()
+def update_departures(stop_point,limit):
+    global departures
+    
     # Définir la mise en page de la fenêtre
     station_name=Station_Name(stop_point)
+    global layout
+
     layout = [
-        [sg.Text(f"Prochains départs en gare de {station_name}", font=("Helvetica", 16))],
-        [sg.Button("Actualiser")],
+        [sg.Text(f"Prochains départs en gare de {station_name}", font=("Helvetica", 16)),sg.Button("Actualiser")],
     ]
 
-    departures = []
-
-    get_departures(departures,stop_point)
+    get_departures(stop_point)
 
     # Définition des chemins vers les logos des lignes
     logo_u = 'logo_u.png'
     logo_n = 'logo_n.png'
     logo_c = 'logo_c.png'
-    logo_ter = 'logo_ter.png'
-
-    def update_departures(departures):
-        departures = get_departures(departures,stop_point)
-
-    def refresh_window(window):
-        window.refresh()
+    logo_ter = 'logo_ter.png' 
 
     count = 0
     for departure in departures:
@@ -159,24 +162,24 @@ def display_departures(limit,stop_point):
         layout.append([sg.Image(line_logo, size=(32, 32)), sg.Text(line_text)])
         count += 1
 
-    window = sg.Window('Prochains départs', layout)
-
+    
+def display_departures(limit,stop_point):
+    
+    global departures
+    global window
+    global layout
+    layout = [[sg.Text("x")]]
+    window= sg.Window('Prochains départs',layout)
     # Boucle principale
     while True:
-        event, values = window.read()
+        update_departures(stop_point,limit)
+        
+        
+        event, _ = window.read(timeout=10000)
         if event == sg.WINDOW_CLOSED or event == "Quitter":
             break
-        elif event == "Actualiser":
-            update_departures(departures)
-            refresh_window(window)
-
-    # Fermer la fenêtre et terminer le programme
     window.close()
 
-
-
-def main():
-    display_departures(limit=10,stop_point='STIF%3AStopPoint%3AQ%3A41207%3A')
 
 if __name__ == "__main__":
     main()
