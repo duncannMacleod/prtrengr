@@ -3,6 +3,9 @@ import json
 import datetime
 import pytz
 import os
+import PySimpleGUI as sg
+
+departures = []
 
 def compare_times(time_str1):
     time_str1 = convert_time(time_str1)
@@ -36,7 +39,7 @@ def adjust_departure_time(time_str):
     time_obj = time_obj + datetime.timedelta(hours=2)  # Ajouter 2 heures
     return time_obj.strftime("%H:%M")
 
-def get_departures():
+def get_departures(departures):
     url = "https://prim.iledefrance-mobilites.fr/marketplace/stop-monitoring?MonitoringRef=STIF%3AStopPoint%3AQ%3A41251%3A"
     headers = {'Accept': 'application/json', 'apikey': "vD5EOap2m5uSuMZmcYgh3pRbmsDlfQ3s"}
     response = requests.get(url, headers=headers)
@@ -45,13 +48,13 @@ def get_departures():
     with open("departures.json", "w") as file:
         json.dump(data, file,indent=4)
 
-    process_departures(data, limit=9)  # Pass the limit as an argument
+    process_departures(data,departures,limit=4)  # Pass the limit as an argument
 
     return "Data saved to departures.json"
 
-def process_departures(data, limit):
+def process_departures(data,departures,limit):
     stop_monitoring = data['Siri']['ServiceDelivery']['StopMonitoringDelivery']
-    departures = []
+    
     displayed_departures = []  # Liste pour stocker les départs déjà affichés
 
     for stop in stop_monitoring:
@@ -89,29 +92,50 @@ def process_departures(data, limit):
                 departures.append(departure)
                 displayed_departures.append(departure)  # Ajouter le départ à la liste des affichés
 
-    sorted_departures = sorted(departures, key=lambda d: d['expected_departure_time'])
+    departures = sorted(departures, key=lambda d: d['expected_departure_time'])
+    display_departures(departures, limit)
 
-    count = 0  # Initialize count variable
-    print()
-    for departure in sorted_departures:
+
+def display_departures(departures, limit):
+    layout = [[sg.Text('Prochains départs :')]]
+    
+    count = 0
+    for departure in departures:
         if count >= limit:
-            break  # Exit the loop after reaching the limit
+            break
+        
         line_ref = departure['line_ref']
         expected_departure_time = departure['expected_departure_time']
         destination_name = departure['destination_name']
         convert_time_expected = convert_time(expected_departure_time)
+        
         if line_ref == "STIF:Line::C01741:":
-            print(f"Ligne U, Destination: {destination_name}, Départ prévu à: {convert_time_expected}, à la voie {platform_name}")
-        if line_ref == "STIF:Line::C01736:":
-            print(f"Ligne N, Destination: {destination_name}, Départ prévu à: {convert_time_expected}, à la voie {platform_name}")
-        if line_ref == "STIF:Line::C01727:":
-            print(f"Ligne C, Destination: {destination_name}, Départ prévu à: {convert_time_expected}, à la voie {platform_name}")
-        print()
-        count += 1  # Increment the count variable
+            line_logo = 'logo_u.png'  # Chemin vers le fichier du logo de la ligne U
+            line_text = f"Destination: {destination_name}, Départ prévu à: {convert_time_expected}"
+        elif line_ref == "STIF:Line::C01736:":
+            line_logo = 'logo_n.png'  # Chemin vers le fichier du logo de la ligne N
+            line_text = f"Destination: {destination_name}, Départ prévu à: {convert_time_expected}"
+        elif line_ref == "STIF:Line::C01727:":
+            line_logo = 'logo_c.png'  # Chemin vers le fichier du logo de la ligne C
+            line_text = f"Destination: {destination_name}, Départ prévu à: {convert_time_expected}"
+        else:
+            line_logo = None
+            line_text = ""
+        
+        layout.append([sg.Image(line_logo, size=(32,32)), sg.Text(line_text)])
+        count += 1
+    
+    window = sg.Window('Prochains départs', layout)
+    
+    while True:
+        event, _ = window.read()
+        if event == sg.WINDOW_CLOSED:
+            break
+    
+    window.close()
 
-    return "Data processed successfully"
 
 
 if __name__ == "__main__":
-    print(get_departures())
+    print(get_departures(departures))
     os.system("pause")
