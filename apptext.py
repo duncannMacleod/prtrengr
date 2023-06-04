@@ -2,7 +2,7 @@ import requests
 import json
 import datetime
 import pytz
-
+import os
 
 def compare_times(time_str1):
     time_str1 = convert_time(time_str1)
@@ -43,15 +43,16 @@ def get_departures():
     data = response.json()
 
     with open("departures.json", "w") as file:
-        json.dump(data, file)
+        json.dump(data, file,indent=4)
 
-    process_departures(data, limit=5)  # Pass the limit as an argument
+    process_departures(data, limit=9)  # Pass the limit as an argument
 
     return "Data saved to departures.json"
 
 def process_departures(data, limit):
     stop_monitoring = data['Siri']['ServiceDelivery']['StopMonitoringDelivery']
     departures = []
+    displayed_departures = []  # Liste pour stocker les départs déjà affichés
 
     for stop in stop_monitoring:
         monitored_visits = stop['MonitoredStopVisit']
@@ -73,24 +74,27 @@ def process_departures(data, limit):
                 expected_departure_time = "2023-01-01T00:00:00.000Z"
                 vehicle_at_stop = False
 
-            if compare_times(expected_departure_time):
-                departure = {
-                    'line_ref': line_ref,
-                    'expected_departure_time': expected_departure_time,
+            departure = {
+                'line_ref': line_ref,
+                'expected_departure_time': expected_departure_time,
                 'destination_name': destination_name
-                }
+            }
+
+            if departure not in displayed_departures and compare_times(expected_departure_time):  # Vérifier si le départ est déjà affiché
                 departures.append(departure)
+                displayed_departures.append(departure)  # Ajouter le départ à la liste des affichés
 
     sorted_departures = sorted(departures, key=lambda d: d['expected_departure_time'])
 
     count = 0  # Initialize count variable
+    print()
     for departure in sorted_departures:
         if count >= limit:
             break  # Exit the loop after reaching the limit
         line_ref = departure['line_ref']
         expected_departure_time = departure['expected_departure_time']
         destination_name = departure['destination_name']
-        convert_time_expected=convert_time(expected_departure_time)
+        convert_time_expected = convert_time(expected_departure_time)
         if line_ref == "STIF:Line::C01741:":
             print(f"Ligne U, Destination: {destination_name}, Départ prévu à: {convert_time_expected}")
         if line_ref == "STIF:Line::C01736:":
@@ -102,5 +106,7 @@ def process_departures(data, limit):
 
     return "Data processed successfully"
 
+
 if __name__ == "__main__":
     print(get_departures())
+    os.system("pause")
