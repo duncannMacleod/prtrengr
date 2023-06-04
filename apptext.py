@@ -5,8 +5,7 @@ import pytz
 import os
 import PySimpleGUI as sg
 import time
-def main():
-    display_departures(limit=4)
+
 
 def compare_times(time_str1):
     time_str1 = convert_time(time_str1)
@@ -49,11 +48,11 @@ def get_departures(departures):
     with open("departures.json", "w") as file:
         json.dump(data, file,indent=4)
 
-    process_departures(data,departures,limit=4)  # Pass the limit as an argument
+    process_departures(data,departures)  # Pass the limit as an argument
 
     return "Data saved to departures.json"
 
-def process_departures(data,departures,limit):
+def process_departures(data,departures):
     stop_monitoring = data['Siri']['ServiceDelivery']['StopMonitoringDelivery']
     
     displayed_departures = []  # Liste pour stocker les départs déjà affichés
@@ -113,8 +112,7 @@ def display_departures(limit):
     logo_n = 'logo_n.png'
     logo_c = 'logo_c.png'
 
-    def update_departures():
-        global departures
+    def update_departures(departures,limit):
         departures = get_departures(limit)
 
     def refresh_window(window):
@@ -154,7 +152,7 @@ def display_departures(limit):
         if event == sg.WINDOW_CLOSED or event == "Quitter":
             break
         elif event == "Actualiser":
-            update_departures()
+            update_departures(departures,limit)
             refresh_window(window)
 
     # Fermer la fenêtre et terminer le programme
@@ -162,8 +160,8 @@ def display_departures(limit):
 
 
 
-
-
+def main():
+    display_departures(limit=4)
 
 if __name__ == "__main__":
     main()
