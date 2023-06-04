@@ -40,6 +40,7 @@ def adjust_departure_time(time_str):
     return time_obj.strftime("%H:%M")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:app.py
 def Station_Name(stop_point):
     with open("stations_names.json",'r') as f:
@@ -61,6 +62,10 @@ def get_departures(departures):
 def get_departures(departures):
     url = "https://prim.iledefrance-mobilites.fr/marketplace/stop-monitoring?MonitoringRef=STIF%3AStopPoint%3AQ%3A41251%3A"
 >>>>>>> parent of ae441a9 (.)
+=======
+def get_departures(departures):
+    url = "https://prim.iledefrance-mobilites.fr/marketplace/stop-monitoring?MonitoringRef=STIF%3AStopPoint%3AQ%3A41251%3A"
+>>>>>>> parent of ae441a9 (.)
     headers = {'Accept': 'application/json', 'apikey': "vD5EOap2m5uSuMZmcYgh3pRbmsDlfQ3s"}
     response = requests.get(url, headers=headers)
     data = response.json()
@@ -68,6 +73,7 @@ def get_departures(departures):
     with open("departures.json", "w") as file:
         json.dump(data, file,indent=4)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD:apptext.py
 <<<<<<< HEAD:app.py
@@ -78,6 +84,9 @@ def get_departures(departures):
 =======
     process_departures(data,departures)
 >>>>>>> parent of de2a88f (.):app.py
+=======
+    process_departures(data,departures)  # Pass the limit as an argument
+>>>>>>> parent of ae441a9 (.)
 =======
     process_departures(data,departures)  # Pass the limit as an argument
 >>>>>>> parent of ae441a9 (.)
@@ -137,6 +146,7 @@ def update_departures(stop_point,limit):
 =======
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 def display_departures(limit,stop_point):
 >>>>>>> parent of de2a88f (.):app.py
 =======
@@ -156,12 +166,19 @@ def display_departures(limit):
     # Définir la mise en page de la fenêtre
     layout = [
         [sg.Text("Prochains départs", font=("Helvetica", 16))],
+=======
+def display_departures(limit):
+    # Définir la mise en page de la fenêtre
+    layout = [
+        [sg.Text("Prochains départs", font=("Helvetica", 16))],
+>>>>>>> parent of ae441a9 (.)
         [sg.Button("Actualiser")],
     ]
 
     departures = []
 
     get_departures(departures)
+<<<<<<< HEAD
 >>>>>>> parent of ae441a9 (.):apptext.py
 =======
     departures = []
@@ -172,16 +189,21 @@ def display_departures(limit):
 =======
     get_departures(departures)
 >>>>>>> parent of ae441a9 (.)
+=======
+>>>>>>> parent of ae441a9 (.)
 
     # Définition des chemins vers les logos des lignes
     logo_u = 'logo_u.png'
     logo_n = 'logo_n.png'
     logo_c = 'logo_c.png'
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:apptext.py
 <<<<<<< HEAD:app.py
     logo_ter = 'logo_ter.png' 
 =======
+=======
+>>>>>>> parent of ae441a9 (.)
 
     def update_departures(departures,limit):
         departures = get_departures(limit)
@@ -232,6 +254,7 @@ def display_departures(limit):
     # Boucle principale
     while True:
 <<<<<<< HEAD
+<<<<<<< HEAD
 <<<<<<< HEAD:apptext.py
 <<<<<<< HEAD:app.py
         update_departures(stop_point,limit)
@@ -244,10 +267,14 @@ def display_departures(limit):
 =======
         event, values = window.read(timeout=60000)  # Actualisation toutes les 60 secondes
 >>>>>>> parent of ae441a9 (.)
+=======
+        event, values = window.read(timeout=60000)  # Actualisation toutes les 60 secondes
+>>>>>>> parent of ae441a9 (.)
         if event == sg.WINDOW_CLOSED or event == "Quitter":
             break
         elif event == "Actualiser":
             update_departures(departures,limit)
+<<<<<<< HEAD
             refresh_window(window)
 
     # Fermer la fenêtre et terminer le programme
@@ -261,6 +288,8 @@ def display_departures(limit):
             break
         elif event == "Actualiser":
             update_departures(departures,limit)
+=======
+>>>>>>> parent of ae441a9 (.)
             refresh_window(window)
 
     # Fermer la fenêtre et terminer le programme
