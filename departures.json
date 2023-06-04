@@ -1,20 +1,144 @@
 {
     "Siri": {
         "ServiceDelivery": {
-            "ResponseTimestamp": "2023-06-04T22:47:16.963Z",
+            "ResponseTimestamp": "2023-06-04T22:54:23.565Z",
             "ProducerRef": "IVTR_HET",
-            "ResponseMessageIdentifier": "IVTR_HET:ResponseMessage:d72080ca-5a67-4603-ab7d-6b4f5bc56048:LOC:",
+            "ResponseMessageIdentifier": "IVTR_HET:ResponseMessage:c12d419d-e20c-430b-a902-163af0441e0d:LOC:",
             "StopMonitoringDelivery": [
                 {
-                    "ResponseTimestamp": "2023-06-04T22:47:16.969Z",
+                    "ResponseTimestamp": "2023-06-04T22:54:23.574Z",
                     "Version": "2.0",
                     "Status": "true",
                     "MonitoredStopVisit": [
                         {
-                            "RecordedAtTime": "2023-06-04T20:19:03.755Z",
-                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165488:LOC",
+                            "RecordedAtTime": "2023-06-04T20:23:00.999Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_862447:LOC",
                             "MonitoringRef": {
-                                "value": "STIF:StopPoint:Q:41251:"
+                                "value": "STIF:StopPoint:Q:41207:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01744:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::8c360671-c1b9-42b5-b5b5-34afdcbda0d9:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:411506:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Chartres"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Versailles Chantiers"
+                                        }
+                                    ],
+                                    "VehicleAtStop": true,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Chartres"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-06-04T20:23:00.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T20:25:00.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 9,
+                                    "AimedArrivalTime": "2023-06-04T20:23:00.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "F"
+                                    },
+                                    "AimedDepartureTime": "2023-06-04T20:25:00.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "862447"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-06-04T20:27:02.210Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_862444:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41207:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01744:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::9c634782-e975-4cad-9894-f05b1dcb24ec:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41203:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare Montparnasse"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Versailles Chantiers"
+                                        }
+                                    ],
+                                    "VehicleAtStop": true,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare Montparnasse"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-06-04T20:27:00.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T20:29:00.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 16,
+                                    "AimedArrivalTime": "2023-06-04T20:27:00.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "E"
+                                    },
+                                    "AimedDepartureTime": "2023-06-04T20:29:00.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "862444"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-06-04T20:28:06.334Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_165488:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41207:"
                             },
                             "MonitoredVehicleJourney": {
                                 "LineRef": {
@@ -47,7 +171,7 @@
                                 "MonitoredCall": {
                                     "StopPointName": [
                                         {
-                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                            "value": "Gare de Versailles Chantiers"
                                         }
                                     ],
                                     "VehicleAtStop": true,
@@ -56,15 +180,15 @@
                                             "value": "Gare Montparnasse"
                                         }
                                     ],
-                                    "ExpectedArrivalTime": "2023-06-04T20:19:00.000Z",
-                                    "ExpectedDepartureTime": "2023-06-04T20:20:00.000Z",
+                                    "ExpectedArrivalTime": "2023-06-04T20:28:26.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T20:31:00.000Z",
                                     "DepartureStatus": "onTime",
-                                    "Order": 7,
-                                    "AimedArrivalTime": "2023-06-04T20:18:40.000Z",
+                                    "Order": 9,
+                                    "AimedArrivalTime": "2023-06-04T20:29:00.000Z",
                                     "ArrivalPlatformName": {
-                                        "value": "2B"
+                                        "value": "B"
                                     },
-                                    "AimedDepartureTime": "2023-06-04T20:19:40.000Z",
+                                    "AimedDepartureTime": "2023-06-04T20:31:00.000Z",
                                     "ArrivalStatus": "onTime"
                                 },
                                 "TrainNumbers": {
@@ -77,320 +201,10 @@
                             }
                         },
                         {
-                            "RecordedAtTime": "2023-06-04T20:19:05.085Z",
-                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_148979:LOC",
+                            "RecordedAtTime": "2023-06-04T20:37:32.677Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_165383:LOC",
                             "MonitoringRef": {
-                                "value": "STIF:StopPoint:Q:41251:"
-                            },
-                            "MonitoredVehicleJourney": {
-                                "LineRef": {
-                                    "value": "STIF:Line::C01727:"
-                                },
-                                "OperatorRef": {
-                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
-                                },
-                                "FramedVehicleJourneyRef": {
-                                    "DataFrameRef": {
-                                        "value": "any"
-                                    },
-                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::29bb2819-5a78-4b1b-b67d-bab9f6fed0cb:LOC"
-                                },
-                                "DirectionName": [],
-                                "DestinationRef": {
-                                    "value": "STIF:StopPoint:Q:41251:"
-                                },
-                                "DestinationName": [
-                                    {
-                                        "value": "Gare de Saint-Quentin en Yvelines"
-                                    }
-                                ],
-                                "VehicleJourneyName": [],
-                                "JourneyNote": [
-                                    {
-                                        "value": "SARA"
-                                    }
-                                ],
-                                "MonitoredCall": {
-                                    "StopPointName": [
-                                        {
-                                            "value": "Gare de Saint-Quentin en Yvelines"
-                                        }
-                                    ],
-                                    "VehicleAtStop": false,
-                                    "DestinationDisplay": [
-                                        {
-                                            "value": "Gare de Saint-Quentin en Yvelines"
-                                        }
-                                    ],
-                                    "ExpectedArrivalTime": "2023-06-04T20:20:55.000Z",
-                                    "DepartureStatus": "",
-                                    "Order": 13,
-                                    "AimedArrivalTime": "2023-06-04T20:21:20.000Z",
-                                    "ArrivalStatus": "onTime"
-                                },
-                                "TrainNumbers": {
-                                    "TrainNumberRef": [
-                                        {
-                                            "value": "148979"
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        {
-                            "RecordedAtTime": "2023-06-04T20:21:00.109Z",
-                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_862444:LOC",
-                            "MonitoringRef": {
-                                "value": "STIF:StopPoint:Q:41251:"
-                            },
-                            "MonitoredVehicleJourney": {
-                                "LineRef": {
-                                    "value": "STIF:Line::C01744:"
-                                },
-                                "OperatorRef": {
-                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
-                                },
-                                "FramedVehicleJourneyRef": {
-                                    "DataFrameRef": {
-                                        "value": "any"
-                                    },
-                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::9c634782-e975-4cad-9894-f05b1dcb24ec:LOC"
-                                },
-                                "DirectionName": [],
-                                "DestinationRef": {
-                                    "value": "STIF:StopPoint:Q:41203:"
-                                },
-                                "DestinationName": [
-                                    {
-                                        "value": "Gare Montparnasse"
-                                    }
-                                ],
-                                "VehicleJourneyName": [],
-                                "JourneyNote": [],
-                                "MonitoredCall": {
-                                    "StopPointName": [
-                                        {
-                                            "value": "Gare de Saint-Quentin en Yvelines"
-                                        }
-                                    ],
-                                    "VehicleAtStop": true,
-                                    "DestinationDisplay": [
-                                        {
-                                            "value": "Gare Montparnasse"
-                                        }
-                                    ],
-                                    "ExpectedArrivalTime": "2023-06-04T20:21:16.000Z",
-                                    "ExpectedDepartureTime": "2023-06-04T20:21:16.000Z",
-                                    "DepartureStatus": "onTime",
-                                    "Order": 14,
-                                    "AimedArrivalTime": "2023-06-04T20:22:30.000Z",
-                                    "ArrivalPlatformName": {
-                                        "value": "2"
-                                    },
-                                    "ArrivalStatus": "onTime"
-                                },
-                                "TrainNumbers": {
-                                    "TrainNumberRef": [
-                                        {
-                                            "value": "862444"
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        {
-                            "RecordedAtTime": "2023-06-04T20:29:46.580Z",
-                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_862447:LOC",
-                            "MonitoringRef": {
-                                "value": "STIF:StopPoint:Q:41251:"
-                            },
-                            "MonitoredVehicleJourney": {
-                                "LineRef": {
-                                    "value": "STIF:Line::C01744:"
-                                },
-                                "OperatorRef": {
-                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
-                                },
-                                "FramedVehicleJourneyRef": {
-                                    "DataFrameRef": {
-                                        "value": "any"
-                                    },
-                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::8c360671-c1b9-42b5-b5b5-34afdcbda0d9:LOC"
-                                },
-                                "DirectionName": [],
-                                "DestinationRef": {
-                                    "value": "STIF:StopPoint:Q:411506:"
-                                },
-                                "DestinationName": [
-                                    {
-                                        "value": "Gare de Chartres"
-                                    }
-                                ],
-                                "VehicleJourneyName": [],
-                                "JourneyNote": [],
-                                "MonitoredCall": {
-                                    "StopPointName": [
-                                        {
-                                            "value": "Gare de Saint-Quentin en Yvelines"
-                                        }
-                                    ],
-                                    "VehicleAtStop": true,
-                                    "DestinationDisplay": [
-                                        {
-                                            "value": "Gare de Chartres"
-                                        }
-                                    ],
-                                    "ExpectedArrivalTime": "2023-06-04T20:30:05.000Z",
-                                    "ExpectedDepartureTime": "2023-06-04T20:30:05.000Z",
-                                    "DepartureStatus": "onTime",
-                                    "Order": 11,
-                                    "AimedArrivalTime": "2023-06-04T20:30:30.000Z",
-                                    "ArrivalPlatformName": {
-                                        "value": "1"
-                                    },
-                                    "ArrivalStatus": "onTime"
-                                },
-                                "TrainNumbers": {
-                                    "TrainNumberRef": [
-                                        {
-                                            "value": "862447"
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        {
-                            "RecordedAtTime": "2023-06-04T20:30:05.034Z",
-                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165390:LOC",
-                            "MonitoringRef": {
-                                "value": "STIF:StopPoint:Q:41251:"
-                            },
-                            "MonitoredVehicleJourney": {
-                                "LineRef": {
-                                    "value": "STIF:Line::C01741:"
-                                },
-                                "OperatorRef": {
-                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
-                                },
-                                "FramedVehicleJourneyRef": {
-                                    "DataFrameRef": {
-                                        "value": "any"
-                                    },
-                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::b54b213b-fce1-4ad6-96b5-6409058afae4:LOC"
-                                },
-                                "DirectionName": [],
-                                "DestinationRef": {
-                                    "value": "STIF:StopPoint:Q:40951:"
-                                },
-                                "DestinationName": [
-                                    {
-                                        "value": "La D\u00e9fense (Grande Arche)"
-                                    }
-                                ],
-                                "VehicleJourneyName": [],
-                                "JourneyNote": [
-                                    {
-                                        "value": "DEFI"
-                                    }
-                                ],
-                                "MonitoredCall": {
-                                    "StopPointName": [
-                                        {
-                                            "value": "Gare de Saint-Quentin en Yvelines"
-                                        }
-                                    ],
-                                    "VehicleAtStop": true,
-                                    "DestinationDisplay": [
-                                        {
-                                            "value": "La D\u00e9fense (Grande Arche)"
-                                        }
-                                    ],
-                                    "ExpectedArrivalTime": "2023-06-04T20:30:00.000Z",
-                                    "ExpectedDepartureTime": "2023-06-04T20:31:00.000Z",
-                                    "DepartureStatus": "onTime",
-                                    "Order": 3,
-                                    "AimedArrivalTime": "2023-06-04T20:28:40.000Z",
-                                    "ArrivalPlatformName": {
-                                        "value": "2B"
-                                    },
-                                    "AimedDepartureTime": "2023-06-04T20:29:40.000Z",
-                                    "ArrivalStatus": "onTime"
-                                },
-                                "TrainNumbers": {
-                                    "TrainNumberRef": [
-                                        {
-                                            "value": "165390"
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        {
-                            "RecordedAtTime": "2023-06-04T01:33:01.021Z",
-                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_147990:LOC",
-                            "MonitoringRef": {
-                                "value": "STIF:StopPoint:Q:41251:"
-                            },
-                            "MonitoredVehicleJourney": {
-                                "LineRef": {
-                                    "value": "STIF:Line::C01727:"
-                                },
-                                "OperatorRef": {
-                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
-                                },
-                                "FramedVehicleJourneyRef": {
-                                    "DataFrameRef": {
-                                        "value": "any"
-                                    },
-                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::35d1eb42-7460-4559-9410-6cd1cb457af2:LOC"
-                                },
-                                "DirectionName": [],
-                                "DestinationRef": {
-                                    "value": "STIF:StopPoint:Q:41208:"
-                                },
-                                "DestinationName": [
-                                    {
-                                        "value": "Invalides"
-                                    }
-                                ],
-                                "VehicleJourneyName": [],
-                                "JourneyNote": [
-                                    {
-                                        "value": "LOLA"
-                                    }
-                                ],
-                                "MonitoredCall": {
-                                    "StopPointName": [
-                                        {
-                                            "value": "Gare de Saint-Quentin en Yvelines"
-                                        }
-                                    ],
-                                    "VehicleAtStop": false,
-                                    "DestinationDisplay": [
-                                        {
-                                            "value": "Invalides"
-                                        }
-                                    ],
-                                    "ExpectedDepartureTime": "2023-06-04T20:40:00.000Z",
-                                    "DepartureStatus": "onTime",
-                                    "Order": 1,
-                                    "AimedDepartureTime": "2023-06-04T20:40:00.000Z",
-                                    "ArrivalStatus": ""
-                                },
-                                "TrainNumbers": {
-                                    "TrainNumberRef": [
-                                        {
-                                            "value": "147991"
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        {
-                            "RecordedAtTime": "2023-06-04T20:47:02.127Z",
-                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165383:LOC",
-                            "MonitoringRef": {
-                                "value": "STIF:StopPoint:Q:41251:"
+                                "value": "STIF:StopPoint:Q:41207:"
                             },
                             "MonitoredVehicleJourney": {
                                 "LineRef": {
@@ -423,7 +237,7 @@
                                 "MonitoredCall": {
                                     "StopPointName": [
                                         {
-                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                            "value": "Gare de Versailles Chantiers"
                                         }
                                     ],
                                     "VehicleAtStop": true,
@@ -432,15 +246,15 @@
                                             "value": "Gare de la Verri\u00e8re"
                                         }
                                     ],
-                                    "ExpectedArrivalTime": "2023-06-04T20:47:00.000Z",
-                                    "ExpectedDepartureTime": "2023-06-04T20:48:00.000Z",
+                                    "ExpectedArrivalTime": "2023-06-04T20:37:30.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T20:38:30.000Z",
                                     "DepartureStatus": "onTime",
-                                    "Order": 10,
-                                    "AimedArrivalTime": "2023-06-04T20:46:40.000Z",
+                                    "Order": 8,
+                                    "AimedArrivalTime": "2023-06-04T20:36:30.000Z",
                                     "ArrivalPlatformName": {
-                                        "value": "1B"
+                                        "value": "F"
                                     },
-                                    "AimedDepartureTime": "2023-06-04T20:47:50.000Z",
+                                    "AimedDepartureTime": "2023-06-04T20:37:30.000Z",
                                     "ArrivalStatus": "onTime"
                                 },
                                 "TrainNumbers": {
@@ -453,10 +267,401 @@
                             }
                         },
                         {
-                            "RecordedAtTime": "2023-06-04T20:46:57.953Z",
-                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165485:LOC",
+                            "RecordedAtTime": "2023-06-04T20:40:47.295Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_165390:LOC",
                             "MonitoringRef": {
-                                "value": "STIF:StopPoint:Q:41251:"
+                                "value": "STIF:StopPoint:Q:41207:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01741:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::b54b213b-fce1-4ad6-96b5-6409058afae4:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:40951:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "La D\u00e9fense (Grande Arche)"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "DEFI"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Versailles Chantiers"
+                                        }
+                                    ],
+                                    "VehicleAtStop": true,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "La D\u00e9fense (Grande Arche)"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-06-04T20:40:49.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T20:41:49.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 5,
+                                    "AimedArrivalTime": "2023-06-04T20:38:40.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "C"
+                                    },
+                                    "AimedDepartureTime": "2023-06-04T20:40:10.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165390"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-06-04T20:44:47.409Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_165583:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41207:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::358ac07e-6f77-41bd-a343-f6a4bc4c49dc:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41234:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Plaisir Grignon"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "GOPI"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Versailles Chantiers"
+                                        }
+                                    ],
+                                    "VehicleAtStop": true,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Plaisir Grignon"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-06-04T20:45:13.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T20:46:20.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 9,
+                                    "AimedArrivalTime": "2023-06-04T20:45:20.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "G"
+                                    },
+                                    "AimedDepartureTime": "2023-06-04T20:46:20.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165583"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-06-04T20:47:01.537Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_165690:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41207:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::a7aa6444-5fb4-4199-bfc0-987598bae8e3:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41203:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare Montparnasse"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "POGI"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Versailles Chantiers"
+                                        }
+                                    ],
+                                    "VehicleAtStop": true,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare Montparnasse"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-06-04T20:46:37.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T20:47:37.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 6,
+                                    "AimedArrivalTime": "2023-06-04T20:45:40.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "C"
+                                    },
+                                    "AimedDepartureTime": "2023-06-04T20:46:40.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165690"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-06-04T20:48:33.236Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_147675:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41207:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01727:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::cddd5a58-d9e7-4cec-bdbc-272a509f4076:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41207:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Versailles Chantiers"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "CIME"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Versailles Chantiers"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Versailles Chantiers"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-06-04T20:49:06.000Z",
+                                    "DepartureStatus": "",
+                                    "Order": 38,
+                                    "AimedArrivalTime": "2023-06-04T20:49:10.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "147675"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-06-04T20:49:23.495Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_165890:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41207:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::56c6475f-6122-408a-9d58-8f8c3e89861a:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41203:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare Montparnasse"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "PADO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Versailles Chantiers"
+                                        }
+                                    ],
+                                    "VehicleAtStop": true,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare Montparnasse"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-06-04T20:49:25.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T20:50:25.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 14,
+                                    "AimedArrivalTime": "2023-06-04T20:48:10.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "E"
+                                    },
+                                    "AimedDepartureTime": "2023-06-04T20:49:10.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165890"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-06-04T20:51:32.034Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_147990:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41207:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01727:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::35d1eb42-7460-4559-9410-6cd1cb457af2:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41208:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Invalides"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "LOLA"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Versailles Chantiers"
+                                        }
+                                    ],
+                                    "VehicleAtStop": true,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Invalides"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-06-04T20:51:30.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T20:52:30.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 3,
+                                    "AimedArrivalTime": "2023-06-04T20:50:30.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "B"
+                                    },
+                                    "AimedDepartureTime": "2023-06-04T20:51:30.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "147991"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-06-04T20:53:40.716Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_165485:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41207:"
                             },
                             "MonitoredVehicleJourney": {
                                 "LineRef": {
@@ -489,7 +694,7 @@
                                 "MonitoredCall": {
                                     "StopPointName": [
                                         {
-                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                            "value": "Gare de Versailles Chantiers"
                                         }
                                     ],
                                     "VehicleAtStop": false,
@@ -498,15 +703,15 @@
                                             "value": "Gare de Rambouillet"
                                         }
                                     ],
-                                    "ExpectedArrivalTime": "2023-06-04T21:11:50.000Z",
-                                    "ExpectedDepartureTime": "2023-06-04T21:12:50.000Z",
+                                    "ExpectedArrivalTime": "2023-06-04T21:01:20.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T21:02:20.000Z",
                                     "DepartureStatus": "onTime",
-                                    "Order": 11,
-                                    "AimedArrivalTime": "2023-06-04T21:11:50.000Z",
+                                    "Order": 9,
+                                    "AimedArrivalTime": "2023-06-04T21:01:20.000Z",
                                     "ArrivalPlatformName": {
-                                        "value": "1B"
+                                        "value": "D"
                                     },
-                                    "AimedDepartureTime": "2023-06-04T21:12:50.000Z",
+                                    "AimedDepartureTime": "2023-06-04T21:02:20.000Z",
                                     "ArrivalStatus": "onTime"
                                 },
                                 "TrainNumbers": {
@@ -519,10 +724,138 @@
                             }
                         },
                         {
-                            "RecordedAtTime": "2023-06-04T20:47:14.695Z",
-                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_148987:LOC",
+                            "RecordedAtTime": "2023-06-04T20:54:03.685Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_3448:LOC",
                             "MonitoringRef": {
-                                "value": "STIF:StopPoint:Q:41251:"
+                                "value": "STIF:StopPoint:Q:41207:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C02370:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::6bdf1168-0a40-4ae6-baeb-33fd65969318:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41203:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare Montparnasse"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Versailles Chantiers"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare Montparnasse"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-06-04T21:02:52.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T21:03:52.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 26,
+                                    "AimedArrivalTime": "2023-06-04T20:51:30.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "C"
+                                    },
+                                    "AimedDepartureTime": "2023-06-04T20:52:30.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "3448"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-06-04T20:43:26.590Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_165887:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41207:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::dbd93a2c-c3f9-4d46-b722-321cce308244:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:411491:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Dreux"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "DAPO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Versailles Chantiers"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Dreux"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-06-04T21:10:30.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T21:11:30.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 9,
+                                    "AimedArrivalTime": "2023-06-04T21:10:30.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "G"
+                                    },
+                                    "AimedDepartureTime": "2023-06-04T21:11:30.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165887"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-06-04T20:54:01.643Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_148987:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41207:"
                             },
                             "MonitoredVehicleJourney": {
                                 "LineRef": {
@@ -555,7 +888,7 @@
                                 "MonitoredCall": {
                                     "StopPointName": [
                                         {
-                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                            "value": "Gare de Versailles Chantiers"
                                         }
                                     ],
                                     "VehicleAtStop": false,
@@ -564,10 +897,15 @@
                                             "value": "Gare de Saint-Quentin en Yvelines"
                                         }
                                     ],
-                                    "ExpectedArrivalTime": "2023-06-04T21:21:20.000Z",
-                                    "DepartureStatus": "",
-                                    "Order": 13,
-                                    "AimedArrivalTime": "2023-06-04T21:21:20.000Z",
+                                    "ExpectedArrivalTime": "2023-06-04T21:11:50.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T21:12:50.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 11,
+                                    "AimedArrivalTime": "2023-06-04T21:11:40.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "D"
+                                    },
+                                    "AimedDepartureTime": "2023-06-04T21:12:40.000Z",
                                     "ArrivalStatus": "onTime"
                                 },
                                 "TrainNumbers": {
@@ -580,14 +918,14 @@
                             }
                         },
                         {
-                            "RecordedAtTime": "2023-06-04T02:38:04.124Z",
-                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_164302:LOC",
+                            "RecordedAtTime": "2023-06-04T17:15:39.311Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_165589:LOC",
                             "MonitoringRef": {
-                                "value": "STIF:StopPoint:Q:41251:"
+                                "value": "STIF:StopPoint:Q:41207:"
                             },
                             "MonitoredVehicleJourney": {
                                 "LineRef": {
-                                    "value": "STIF:Line::C01741:"
+                                    "value": "STIF:Line::C01736:"
                                 },
                                 "OperatorRef": {
                                     "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
@@ -596,111 +934,50 @@
                                     "DataFrameRef": {
                                         "value": "any"
                                     },
-                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::3f36b8c5-a1e4-4b37-aeb3-1a2776c26fa0:LOC"
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::47554fb7-4697-4370-9ee1-a4a64ebb3609:LOC"
                                 },
                                 "DirectionName": [],
                                 "DestinationRef": {
-                                    "value": "STIF:StopPoint:Q:40951:"
+                                    "value": "STIF:StopPoint:Q:41234:"
                                 },
                                 "DestinationName": [
                                     {
-                                        "value": "La D\u00e9fense (Grande Arche)"
+                                        "value": "Gare de Plaisir Grignon"
                                     }
                                 ],
                                 "VehicleJourneyName": [],
                                 "JourneyNote": [
                                     {
-                                        "value": "DEFI"
+                                        "value": "GOPI"
                                     }
                                 ],
                                 "MonitoredCall": {
                                     "StopPointName": [
                                         {
-                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                            "value": "Gare de Versailles Chantiers"
                                         }
                                     ],
                                     "VehicleAtStop": false,
                                     "DestinationDisplay": [
                                         {
-                                            "value": "La D\u00e9fense (Grande Arche)"
+                                            "value": "Gare de Plaisir Grignon"
                                         }
                                     ],
-                                    "ExpectedArrivalTime": "2023-06-04T21:28:40.000Z",
-                                    "ExpectedDepartureTime": "2023-06-04T21:29:40.000Z",
+                                    "ExpectedArrivalTime": "2023-06-04T21:30:20.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T21:31:20.000Z",
                                     "DepartureStatus": "onTime",
-                                    "Order": 3,
-                                    "AimedArrivalTime": "2023-06-04T21:28:40.000Z",
+                                    "Order": 9,
+                                    "AimedArrivalTime": "2023-06-04T21:30:20.000Z",
                                     "ArrivalPlatformName": {
-                                        "value": "2B"
+                                        "value": "G"
                                     },
-                                    "AimedDepartureTime": "2023-06-04T21:29:40.000Z",
+                                    "AimedDepartureTime": "2023-06-04T21:31:20.000Z",
                                     "ArrivalStatus": "onTime"
                                 },
                                 "TrainNumbers": {
                                     "TrainNumberRef": [
                                         {
-                                            "value": "164302"
-                                        }
-                                    ]
-                                }
-                            }
-                        },
-                        {
-                            "RecordedAtTime": "2023-06-04T20:45:06.580Z",
-                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_16786:LOC",
-                            "MonitoringRef": {
-                                "value": "STIF:StopPoint:Q:41251:"
-                            },
-                            "MonitoredVehicleJourney": {
-                                "LineRef": {
-                                    "value": "STIF:Line::C01744:"
-                                },
-                                "OperatorRef": {
-                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
-                                },
-                                "FramedVehicleJourneyRef": {
-                                    "DataFrameRef": {
-                                        "value": "any"
-                                    },
-                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::fc46b561-27b2-4614-bbe3-4742b2f82a37:LOC"
-                                },
-                                "DirectionName": [],
-                                "DestinationRef": {
-                                    "value": "STIF:StopPoint:Q:41203:"
-                                },
-                                "DestinationName": [
-                                    {
-                                        "value": "Gare Montparnasse"
-                                    }
-                                ],
-                                "VehicleJourneyName": [],
-                                "JourneyNote": [],
-                                "MonitoredCall": {
-                                    "StopPointName": [
-                                        {
-                                            "value": "Gare de Saint-Quentin en Yvelines"
-                                        }
-                                    ],
-                                    "VehicleAtStop": false,
-                                    "DestinationDisplay": [
-                                        {
-                                            "value": "Gare Montparnasse"
-                                        }
-                                    ],
-                                    "ExpectedArrivalTime": "2023-06-04T21:38:10.000Z",
-                                    "ExpectedDepartureTime": "2023-06-04T21:38:10.000Z",
-                                    "DepartureStatus": "onTime",
-                                    "Order": 30,
-                                    "AimedArrivalTime": "2023-06-04T21:33:30.000Z",
-                                    "ArrivalPlatformName": {
-                                        "value": "2"
-                                    },
-                                    "ArrivalStatus": "onTime"
-                                },
-                                "TrainNumbers": {
-                                    "TrainNumberRef": [
-                                        {
-                                            "value": "16786"
+                                            "value": "165589"
                                         }
                                     ]
                                 }
@@ -708,9 +985,9 @@
                         },
                         {
                             "RecordedAtTime": "2023-06-04T02:39:00.671Z",
-                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_165391:LOC",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_165391:LOC",
                             "MonitoringRef": {
-                                "value": "STIF:StopPoint:Q:41251:"
+                                "value": "STIF:StopPoint:Q:41207:"
                             },
                             "MonitoredVehicleJourney": {
                                 "LineRef": {
@@ -743,7 +1020,7 @@
                                 "MonitoredCall": {
                                     "StopPointName": [
                                         {
-                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                            "value": "Gare de Versailles Chantiers"
                                         }
                                     ],
                                     "VehicleAtStop": false,
@@ -752,15 +1029,15 @@
                                             "value": "Gare de la Verri\u00e8re"
                                         }
                                     ],
-                                    "ExpectedArrivalTime": "2023-06-04T21:46:40.000Z",
-                                    "ExpectedDepartureTime": "2023-06-04T21:47:50.000Z",
+                                    "ExpectedArrivalTime": "2023-06-04T21:36:30.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T21:37:30.000Z",
                                     "DepartureStatus": "onTime",
-                                    "Order": 10,
-                                    "AimedArrivalTime": "2023-06-04T21:46:40.000Z",
+                                    "Order": 8,
+                                    "AimedArrivalTime": "2023-06-04T21:36:30.000Z",
                                     "ArrivalPlatformName": {
-                                        "value": "1B"
+                                        "value": "D"
                                     },
-                                    "AimedDepartureTime": "2023-06-04T21:47:50.000Z",
+                                    "AimedDepartureTime": "2023-06-04T21:37:30.000Z",
                                     "ArrivalStatus": "onTime"
                                 },
                                 "TrainNumbers": {
@@ -773,10 +1050,265 @@
                             }
                         },
                         {
-                            "RecordedAtTime": "2023-06-04T04:25:58.297Z",
-                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_164404:LOC",
+                            "RecordedAtTime": "2023-06-04T02:38:04.124Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_164302:LOC",
                             "MonitoringRef": {
-                                "value": "STIF:StopPoint:Q:41251:"
+                                "value": "STIF:StopPoint:Q:41207:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01741:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::3f36b8c5-a1e4-4b37-aeb3-1a2776c26fa0:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:40951:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "La D\u00e9fense (Grande Arche)"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "DEFI"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Versailles Chantiers"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "La D\u00e9fense (Grande Arche)"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-06-04T21:38:50.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T21:40:20.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 5,
+                                    "AimedArrivalTime": "2023-06-04T21:38:50.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "B"
+                                    },
+                                    "AimedDepartureTime": "2023-06-04T21:40:20.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "164302"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-06-04T20:53:04.044Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_16786:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41207:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01744:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::fc46b561-27b2-4614-bbe3-4742b2f82a37:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41203:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare Montparnasse"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Versailles Chantiers"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare Montparnasse"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-06-04T21:42:15.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T21:43:15.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 32,
+                                    "AimedArrivalTime": "2023-06-04T21:38:30.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "E"
+                                    },
+                                    "AimedDepartureTime": "2023-06-04T21:40:30.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "16786"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-06-04T20:54:12.097Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_147683:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41207:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01727:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::d3ad573f-0651-4719-94da-7e4714076090:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41207:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Versailles Chantiers"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "CIME"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Versailles Chantiers"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Versailles Chantiers"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-06-04T21:49:10.000Z",
+                                    "DepartureStatus": "",
+                                    "Order": 38,
+                                    "AimedArrivalTime": "2023-06-04T21:49:10.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "147683"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-06-04T20:54:18.322Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_164802:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41207:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::eab367ed-102f-4397-abf8-98ba1c1d7194:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41203:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare Montparnasse"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "PADO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Versailles Chantiers"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare Montparnasse"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-06-04T21:49:19.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T21:50:19.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 14,
+                                    "AimedArrivalTime": "2023-06-04T21:48:10.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "E"
+                                    },
+                                    "AimedDepartureTime": "2023-06-04T21:49:10.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "164802"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-06-04T04:25:58.297Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_164404:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41207:"
                             },
                             "MonitoredVehicleJourney": {
                                 "LineRef": {
@@ -809,7 +1341,7 @@
                                 "MonitoredCall": {
                                     "StopPointName": [
                                         {
-                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                            "value": "Gare de Versailles Chantiers"
                                         }
                                     ],
                                     "VehicleAtStop": false,
@@ -818,15 +1350,15 @@
                                             "value": "Gare Montparnasse"
                                         }
                                     ],
-                                    "ExpectedArrivalTime": "2023-06-04T21:48:40.000Z",
-                                    "ExpectedDepartureTime": "2023-06-04T21:49:40.000Z",
+                                    "ExpectedArrivalTime": "2023-06-04T21:59:00.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T22:01:00.000Z",
                                     "DepartureStatus": "onTime",
-                                    "Order": 7,
-                                    "AimedArrivalTime": "2023-06-04T21:48:40.000Z",
+                                    "Order": 9,
+                                    "AimedArrivalTime": "2023-06-04T21:59:00.000Z",
                                     "ArrivalPlatformName": {
-                                        "value": "2B"
+                                        "value": "B"
                                     },
-                                    "AimedDepartureTime": "2023-06-04T21:49:40.000Z",
+                                    "AimedDepartureTime": "2023-06-04T22:01:00.000Z",
                                     "ArrivalStatus": "onTime"
                                 },
                                 "TrainNumbers": {
@@ -839,10 +1371,76 @@
                             }
                         },
                         {
-                            "RecordedAtTime": "2023-06-04T20:22:22.002Z",
-                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_148995:LOC",
+                            "RecordedAtTime": "2023-06-04T17:14:48.638Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_165895:LOC",
                             "MonitoringRef": {
-                                "value": "STIF:StopPoint:Q:41251:"
+                                "value": "STIF:StopPoint:Q:41207:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::c80aadce-4642-4289-aea9-727607505de4:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:411491:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Dreux"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "DAPO"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Versailles Chantiers"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Dreux"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-06-04T22:10:30.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T22:11:30.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 9,
+                                    "AimedArrivalTime": "2023-06-04T22:10:30.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "G"
+                                    },
+                                    "AimedDepartureTime": "2023-06-04T22:11:30.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "165895"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-06-04T20:22:22.002Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_148995:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41207:"
                             },
                             "MonitoredVehicleJourney": {
                                 "LineRef": {
@@ -875,7 +1473,7 @@
                                 "MonitoredCall": {
                                     "StopPointName": [
                                         {
-                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                            "value": "Gare de Versailles Chantiers"
                                         }
                                     ],
                                     "VehicleAtStop": false,
@@ -884,10 +1482,15 @@
                                             "value": "Gare de Saint-Quentin en Yvelines"
                                         }
                                     ],
-                                    "ExpectedArrivalTime": "2023-06-04T22:21:20.000Z",
-                                    "DepartureStatus": "",
-                                    "Order": 13,
-                                    "AimedArrivalTime": "2023-06-04T22:21:20.000Z",
+                                    "ExpectedArrivalTime": "2023-06-04T22:11:40.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T22:12:40.000Z",
+                                    "DepartureStatus": "onTime",
+                                    "Order": 11,
+                                    "AimedArrivalTime": "2023-06-04T22:11:40.000Z",
+                                    "ArrivalPlatformName": {
+                                        "value": "D"
+                                    },
+                                    "AimedDepartureTime": "2023-06-04T22:12:40.000Z",
                                     "ArrivalStatus": "onTime"
                                 },
                                 "TrainNumbers": {
@@ -901,9 +1504,9 @@
                         },
                         {
                             "RecordedAtTime": "2023-06-04T02:38:04.467Z",
-                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41251_164303:LOC",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_164303:LOC",
                             "MonitoringRef": {
-                                "value": "STIF:StopPoint:Q:41251:"
+                                "value": "STIF:StopPoint:Q:41207:"
                             },
                             "MonitoredVehicleJourney": {
                                 "LineRef": {
@@ -936,7 +1539,7 @@
                                 "MonitoredCall": {
                                     "StopPointName": [
                                         {
-                                            "value": "Gare de Saint-Quentin en Yvelines"
+                                            "value": "Gare de Versailles Chantiers"
                                         }
                                     ],
                                     "VehicleAtStop": false,
@@ -945,21 +1548,82 @@
                                             "value": "Gare de la Verri\u00e8re"
                                         }
                                     ],
-                                    "ExpectedArrivalTime": "2023-06-04T22:46:50.000Z",
-                                    "ExpectedDepartureTime": "2023-06-04T22:48:00.000Z",
+                                    "ExpectedArrivalTime": "2023-06-04T22:37:50.000Z",
+                                    "ExpectedDepartureTime": "2023-06-04T22:38:50.000Z",
                                     "DepartureStatus": "onTime",
-                                    "Order": 10,
-                                    "AimedArrivalTime": "2023-06-04T22:46:50.000Z",
+                                    "Order": 8,
+                                    "AimedArrivalTime": "2023-06-04T22:37:50.000Z",
                                     "ArrivalPlatformName": {
-                                        "value": "1B"
+                                        "value": "D"
                                     },
-                                    "AimedDepartureTime": "2023-06-04T22:48:00.000Z",
+                                    "AimedDepartureTime": "2023-06-04T22:38:50.000Z",
                                     "ArrivalStatus": "onTime"
                                 },
                                 "TrainNumbers": {
                                     "TrainNumberRef": [
                                         {
                                             "value": "164303"
+                                        }
+                                    ]
+                                }
+                            }
+                        },
+                        {
+                            "RecordedAtTime": "2023-06-04T17:27:24.259Z",
+                            "ItemIdentifier": "SNCF_ACCES_CLOUD:Item::41207_164209:LOC",
+                            "MonitoringRef": {
+                                "value": "STIF:StopPoint:Q:41207:"
+                            },
+                            "MonitoredVehicleJourney": {
+                                "LineRef": {
+                                    "value": "STIF:Line::C01736:"
+                                },
+                                "OperatorRef": {
+                                    "value": "SNCF_ACCES_CLOUD:Operator::SNCF:"
+                                },
+                                "FramedVehicleJourneyRef": {
+                                    "DataFrameRef": {
+                                        "value": "any"
+                                    },
+                                    "DatedVehicleJourneyRef": "SNCF_ACCES_CLOUD:VehicleJourney::f102643d-4e20-4a74-af75-df36bebdb3b8:LOC"
+                                },
+                                "DirectionName": [],
+                                "DestinationRef": {
+                                    "value": "STIF:StopPoint:Q:41207:"
+                                },
+                                "DestinationName": [
+                                    {
+                                        "value": "Gare de Versailles Chantiers"
+                                    }
+                                ],
+                                "VehicleJourneyName": [],
+                                "JourneyNote": [
+                                    {
+                                        "value": "VOPI"
+                                    }
+                                ],
+                                "MonitoredCall": {
+                                    "StopPointName": [
+                                        {
+                                            "value": "Gare de Versailles Chantiers"
+                                        }
+                                    ],
+                                    "VehicleAtStop": false,
+                                    "DestinationDisplay": [
+                                        {
+                                            "value": "Gare de Versailles Chantiers"
+                                        }
+                                    ],
+                                    "ExpectedArrivalTime": "2023-06-04T23:31:30.000Z",
+                                    "DepartureStatus": "",
+                                    "Order": 9,
+                                    "AimedArrivalTime": "2023-06-04T23:31:30.000Z",
+                                    "ArrivalStatus": "onTime"
+                                },
+                                "TrainNumbers": {
+                                    "TrainNumberRef": [
+                                        {
+                                            "value": "164209"
                                         }
                                     ]
                                 }
