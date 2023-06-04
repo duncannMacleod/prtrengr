@@ -4,8 +4,9 @@ import datetime
 import pytz
 import os
 import PySimpleGUI as sg
-
-departures = []
+import time
+def main():
+    display_departures(limit=4)
 
 def compare_times(time_str1):
     time_str1 = convert_time(time_str1)
@@ -93,12 +94,32 @@ def process_departures(data,departures,limit):
                 displayed_departures.append(departure)  # Ajouter le départ à la liste des affichés
 
     departures = sorted(departures, key=lambda d: d['expected_departure_time'])
-    display_departures(departures, limit)
+    #display_departures(departures, limit)
 
 
-def display_departures(departures, limit):
-    layout = [[sg.Text('Prochains départs :')]]
-    
+def display_departures(limit):
+    # Définir la mise en page de la fenêtre
+    layout = [
+        [sg.Text("Prochains départs", font=("Helvetica", 16))],
+        [sg.Button("Actualiser")],
+    ]
+
+    departures = []
+
+    get_departures(departures)
+
+    # Définition des chemins vers les logos des lignes
+    logo_u = 'logo_u.png'
+    logo_n = 'logo_n.png'
+    logo_c = 'logo_c.png'
+
+    def update_departures():
+        global departures
+        departures = get_departures(limit)
+
+    def refresh_window(window):
+        window.refresh()
+
     count = 0
     for departure in departures:
         if count >= limit:
@@ -110,32 +131,39 @@ def display_departures(departures, limit):
         convert_time_expected = convert_time(expected_departure_time)
         
         if line_ref == "STIF:Line::C01741:":
-            line_logo = 'logo_u.png'  # Chemin vers le fichier du logo de la ligne U
+            line_logo = logo_u
             line_text = f"Destination: {destination_name}, Départ prévu à: {convert_time_expected}"
         elif line_ref == "STIF:Line::C01736:":
-            line_logo = 'logo_n.png'  # Chemin vers le fichier du logo de la ligne N
+            line_logo = logo_n
             line_text = f"Destination: {destination_name}, Départ prévu à: {convert_time_expected}"
         elif line_ref == "STIF:Line::C01727:":
-            line_logo = 'logo_c.png'  # Chemin vers le fichier du logo de la ligne C
+            line_logo = logo_c
             line_text = f"Destination: {destination_name}, Départ prévu à: {convert_time_expected}"
         else:
             line_logo = None
             line_text = ""
         
-        layout.append([sg.Image(line_logo, size=(32,32)), sg.Text(line_text)])
+        layout.append([sg.Image(line_logo, size=(32, 32)), sg.Text(line_text)])
         count += 1
-    
+
     window = sg.Window('Prochains départs', layout)
-    
+
+    # Boucle principale
     while True:
-        event, _ = window.read()
-        if event == sg.WINDOW_CLOSED:
+        event, values = window.read(timeout=60000)  # Actualisation toutes les 60 secondes
+        if event == sg.WINDOW_CLOSED or event == "Quitter":
             break
-    
+        elif event == "Actualiser":
+            update_departures()
+            refresh_window(window)
+
+    # Fermer la fenêtre et terminer le programme
     window.close()
 
 
 
+
+
+
 if __name__ == "__main__":
-    print(get_departures(departures))
-    os.system("pause")
+    main()
