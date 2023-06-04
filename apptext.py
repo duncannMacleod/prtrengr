@@ -46,6 +46,7 @@ def adjust_departure_time(time_str):
     time_obj = time_obj + datetime.timedelta(hours=2)  # Ajouter 2 heures
     return time_obj.strftime("%H:%M")
 
+<<<<<<< HEAD:app.py
 def Station_Name(stop_point):
     with open("stations_names.json",'r') as f:
         data=json.load(f)
@@ -58,6 +59,10 @@ def Station_Name(stop_point):
 def get_departures(stop_point):
     base_url = "https://prim.iledefrance-mobilites.fr/marketplace/stop-monitoring?MonitoringRef={}"
     url= base_url.format(stop_point)
+=======
+def get_departures(departures):
+    url = "https://prim.iledefrance-mobilites.fr/marketplace/stop-monitoring?MonitoringRef=STIF%3AStopPoint%3AQ%3A41251%3A"
+>>>>>>> parent of ae441a9 (.):apptext.py
     headers = {'Accept': 'application/json', 'apikey': "vD5EOap2m5uSuMZmcYgh3pRbmsDlfQ3s"}
     response = requests.get(url, headers=headers)
     data = response.json()
@@ -65,7 +70,11 @@ def get_departures(stop_point):
     with open("departures.json", "w") as file:
         json.dump(data, file,indent=4)
 
+<<<<<<< HEAD:app.py
     process_departures(data)
+=======
+    process_departures(data,departures)  # Pass the limit as an argument
+>>>>>>> parent of ae441a9 (.):apptext.py
 
     return "Data saved to departures.json"
 
@@ -77,7 +86,6 @@ def process_departures(data):
 
     for stop in stop_monitoring:
         monitored_visits = stop['MonitoredStopVisit']
-        
         for visit in monitored_visits:
             recorded_at_time = visit['RecordedAtTime']
             monitored_vehicle_journey = visit['MonitoredVehicleJourney']
@@ -111,7 +119,9 @@ def process_departures(data):
                 displayed_departures.append(departure)  # Ajouter le départ à la liste des affichés
 
     departures = sorted(departures, key=lambda d: d['expected_departure_time'])
+    #display_departures(departures, limit)
 
+<<<<<<< HEAD:app.py
 def refresh_window(window):
         window.refresh()
 def update_departures(stop_point,limit):
@@ -126,12 +136,34 @@ def update_departures(stop_point,limit):
     ]
 
     get_departures(stop_point)
+=======
+
+def display_departures(limit):
+    # Définir la mise en page de la fenêtre
+    layout = [
+        [sg.Text("Prochains départs", font=("Helvetica", 16))],
+        [sg.Button("Actualiser")],
+    ]
+
+    departures = []
+
+    get_departures(departures)
+>>>>>>> parent of ae441a9 (.):apptext.py
 
     # Définition des chemins vers les logos des lignes
     logo_u = 'logo_u.png'
     logo_n = 'logo_n.png'
     logo_c = 'logo_c.png'
+<<<<<<< HEAD:app.py
     logo_ter = 'logo_ter.png' 
+=======
+
+    def update_departures(departures,limit):
+        departures = get_departures(limit)
+
+    def refresh_window(window):
+        window.refresh()
+>>>>>>> parent of ae441a9 (.):apptext.py
 
     count = 0
     for departure in departures:
@@ -152,9 +184,6 @@ def update_departures(stop_point,limit):
         elif line_ref == "STIF:Line::C01727:":
             line_logo = logo_c
             line_text = f"Destination: {destination_name}, Départ prévu à: {convert_time_expected}"
-        elif line_ref == "STIF:Line::C01744:" or "STIF:Line::C02370:":
-            line_logo = logo_ter
-            line_text = f"Destination: {destination_name}, Départ prévu à: {convert_time_expected}"
         else:
             line_logo = None
             line_text = ""
@@ -172,6 +201,7 @@ def display_departures(limit,stop_point):
     window= sg.Window('Prochains départs',layout)
     # Boucle principale
     while True:
+<<<<<<< HEAD:app.py
         update_departures(stop_point,limit)
         
         
@@ -181,5 +211,22 @@ def display_departures(limit,stop_point):
     window.close()
 
 
+=======
+        event, values = window.read(timeout=60000)  # Actualisation toutes les 60 secondes
+        if event == sg.WINDOW_CLOSED or event == "Quitter":
+            break
+        elif event == "Actualiser":
+            update_departures(departures,limit)
+            refresh_window(window)
+
+    # Fermer la fenêtre et terminer le programme
+    window.close()
+
+
+
+def main():
+    display_departures(limit=4)
+
+>>>>>>> parent of ae441a9 (.):apptext.py
 if __name__ == "__main__":
     main()
