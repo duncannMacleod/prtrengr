@@ -2,6 +2,9 @@
   "Station_Names": {
     "STIF%3AStopPoint%3AQ%3A41207%3A": "Versailles Chantiers",
     "STIF%3AStopPoint%3AQ%3A41223%3A": "La Verrière",
-    "STIF%3AStopPoint%3AQ%3A41251%3A": "Saint Quentin en Yvenines"
+    "STIF%3AStopPoint%3AQ%3A41251%3A": "Saint Quentin en Yvenines",
+    "STIF:StopPoint:Q:473921:": "Ch\u00e2telet Les Halles",
+    "STIF:StopArea:SP:474151:": "Ch\u00e2telet Les Halles",
+    "STIF%3AStopPoint%3AQ%3A41194%3A": "Saint lazare"
   }
 }
